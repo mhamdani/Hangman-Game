@@ -181,7 +181,7 @@ window.onload = function () {
   // Start Play
   play = function () {
     categories = [
-        ["crash-bandicoot", "zelda", "super-mario", "street-fighter", "oblivion", "minecraft", "skyrim"],
+        ["zelda", "super-mario", "street-fighter", "skyrim"],
         ["bubbles", "grumpy-cat", "bo", "maru", "wishbone"],
         ["twin", "henry", "languages", "chess", "thirty-one"]
     ];
@@ -207,9 +207,9 @@ window.onload = function () {
     hint.onclick = function() {
 
       hints = [
-        ["Set mostly on the fictitious Wumpa Islands", "Travel through Hyrule to rescue a princess", "Duo brothers traveling through a kingdom named after a vegetable to rescue a princess named after a fruit", "A popular fighting game that has spawned movies and game conventions", "Prevent the 'Mythic Dawn' from opening up a portal to a demonic realm", "Build constructions out of textured cubes in 3D", "To defeat Alduin, the World-Eater"],
-        ["Michael Jackson's chimpanzee", "A feline with a facial expression", "Sasha and Malia's Portuguese Water Dog", "A famous Youtube cat from Japan", "A clever and adventurous Jack Russell Terrier"],
-        ["Monozygotic", "Name of Michelle's son", "Speaks many ---", "Obsessed with this strategy game", "Michelle's age"]
+        ["Main character who travels through Hyrule to rescue a princess", "Duo brothers traveling through a kingdom named after a vegetable to rescue a princess named after a fruit", "A popular fighting game that has spawned movies and game conventions", "A game to defeat Alduin, the World-Eater"],
+        ["Michael Jackson's chimpanzee", "A famous feline with a grumpy disposition", "Sasha and Malia's Portuguese Water Dog", "A famous Youtube cat from Japan", "A clever and adventurous Jack Russell Terrier"],
+        ["Another word for monozygotic", "Name of Michelle's son", "She speaks many ---", "She's obsessed with this 8x8 strategy game", "Michelle's age"]
     ];
 
     var catagoryIndex = categories.indexOf(chosenCategory);
