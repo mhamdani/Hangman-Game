@@ -1,5 +1,7 @@
 window.onload = function () {
 
+// Global Variables
+
   var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
         'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's',
         't', 'u', 'v', 'w', 'x', 'y', 'z'];
@@ -18,6 +20,8 @@ window.onload = function () {
   var showCatagory = document.getElementById("scatagory");
   var getHint = document.getElementById("hint");
   var showClue = document.getElementById("clue");
+
+// Functions
 
   // Create letter ul
   var buttons = function () {
@@ -156,6 +160,7 @@ window.onload = function () {
 
   drawArray = [rightLeg, leftLeg, rightArm, leftArm,  torso,  head, frame4, frame3, frame2, frame1];
 
+// Onclick Functions
    check = function () {
     list.onclick = function () {
       var geuss = (this.innerHTML);
@@ -177,6 +182,8 @@ window.onload = function () {
       }
     }
   }
+
+// Main Processes
 
   // Start Play
   play = function () {
