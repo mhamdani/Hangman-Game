@@ -1,12 +1,145 @@
-p {
-  font-size: 20px;
+#row2 {
+  padding: 20px 20px 20px 20px;
 }
-.header {
-  margin-top: 100px;
+#top-header {
+  margin-top: 50px;
 }
-.navbar {
-  margin: 10px 0px 30px 200px;
+#mylives {
+  color: azure;
 }
-.emptyrow {
-  height: 50px;
+#alphabet-box {
+  margin-top: 60px;
+}
+#categoryBox {
+  color: white;
+}
+#clue {
+  color: #333;
+}
+
+body {
+  background: slategrey;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  color:$white;
+  height:100%;
+  text-align:center;
+  font-size:18px;
+}
+
+.wrappper{
+  width:100%;
+  margin:0 auto;
+}
+
+canvas{
+  color: hotpink;
+  border: hotpink 2px;
+  padding:15px;
+}
+
+h1, h2, h3 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+   margin:5px 0;
+}
+h1 {
+	font-size: 2.6em;
+  color: hotpink;
+}
+h2 {
+	font-size: 1.6em;
+}
+h3 {
+  color: white;
+}
+p{
+  font-size: 1.6em;
+}
+#pink {
+  color: hotpink;
+}
+
+#alphabet {
+  margin:15px auto;
+  padding:0;
+  max-width:900px;
+  color: white;
+}
+
+#alphabet li {
+  float:left;
+  margin: 0 10px 10px 0;
+  list-style:none;
+  width:35px;
+  height:30px;
+  padding-top:10px;
+  cursor:pointer;
+  border: solid 1px $white;
+}
+
+#my-word {
+  margin: 0;
+  display: block;
+  padding: 0;
+  display:block;
+}
+
+#my-word li {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  display: inline-block;
+  padding: 0 10px;
+  font-size:1.6em;
+}
+
+.active {
+  cursor:default;
+
+}
+
+#mylives{
+  font-size:1.6em;
+  text-align:center;
+  display:block;
+}
+
+button{
+  background: hotpink;
+  color: white;
+  border: solid 3px hotpink;
+  text-decoration:none;
+  cursor:pointer;
+  font-size:1.2em;
+  padding:18px 10px;
+  width:150px;
+  margin: 10px;
+  outline: none;
+    }
+}
+
+@media (max-width: 767px) {
+  #alphabet {
+  padding:0 0 0 15px;
+}
+  }
+
+  @media (max-width: 480px) {
+  #alphabet {
+  padding:0 0 0 25px;
+}
+  }
+
+@media (max-width: 1199px) {
+  #alphabet {
+  padding:0 0 0 25px;
+}
+  .wrapper,
+  #categoryBox {
+    width: 100%;
+    float: left;
+  }
+  .wrapper {
+    margin-bottom: 20px;
+  }
 }

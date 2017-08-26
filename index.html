@@ -7,67 +7,42 @@
     <!-- Bootstrap css -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <!-- Bootstrap Darkly theme -->
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap_darkly.css">
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-    <!-- My css style sheet link -->
+    <!-- My css and javascript links -->
+    <link rel="reset_style_sheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
 
   </head>
-
-  <body>
-<!--Creating the Overall Grid-->
-<div class="container">
-  <div class="row">
-    <div class="col-lg-6">
-      <div class="header">
-        <h1>Let's Play Hangman!</h1>
-      </div>
-    </div>
-    <div class="col-lg-6">
-      <div class="navbar">
-        <!-- NAV CODE HERE-->
-        <form class="navbar-form navbar-left" role="search">
-          <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search for other games..">
-          </div>
-          <button type="submit" class="btn btn-default">Submit</button>
-        </form>
+  <div class="wrapper" id="top-header">
+   <h1>Let's Play Hangman!</h1>
+    <p><h3>Click the <span id="pink">Hint</span> button for a clue.</h3></p>
+  </div>
+  <div class="container">
+  <div class="row" id="row2">
+    <div class="col-lg-6" id="alphabet-box">
+    <div class="wrapper">
+      <div id="buttons">
       </div>
     </div>
   </div>
-  <div class="row">
-    <div class="emptyrow">
+    <div class="col-lg-6" id="categoryBox">
+    <p id="catagoryName"></p>
+      <button id="hint">Hint</button>
+    <p id="clue"></p>
+    <p id="mylives"></p>
+    <div id="incorrecthold">
     </div>
   </div>
-  <div class="row">
-    <div class="col-lg-6">
-      <div class="instructions">
-        <p>
-          Please type a letter to try and guess the word on the right ---->
-        </p>
-        <p>
-          If you guess correctly, the letter will appear on the spacing below the noose. If the letter you guess is not a letter of the word, the hangman will start to appear.
-        </p>
-        <h2> Good luck!</h2>
+     <canvas id="stickman">This Text will show if the Browser does NOT support HTML5 Canvas tag</canvas>
+    <div class="row" id="row3">
+      <div class="col-lg-12" id="word-hold">
+        <br><br><div id="hold">
+        </div>
       </div>
     </div>
-    <div class="col-lg-6">
-      <div class="game">
-        <!-- INSERT GAME CODE HERE -->
-      </div>
+
+  </div>
+    <div class="container">
+      <button id="reset">Play again</button>
     </div>
   </div>
-  <!-- FOOTER -->
-
-
-
-
-
-
-
-  </body>
-</html>
